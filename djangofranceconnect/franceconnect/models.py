@@ -78,7 +78,6 @@ class FranceConnectAuth(object):
             'state': self.generate_nonce(16),
             'post_logout_redirect_uri': self.__url_callback_logout,
         }
-        print(data)
         return self.__url_logout + '?' + urlencode(data)
 
     def generate_nonce(self, length = 8):
