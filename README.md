@@ -8,6 +8,7 @@ It provides a simple `FranceConnectAuth()` object that you can use in your Djang
 ### Requirements
 
 - Python 3+
+- pipenv
 - Content of requirements.txt file
 
 ### Preparation
@@ -31,7 +32,6 @@ FRANCE_CONNECT_CALLBACK_DISCONNECT_URL = "http://localhost:8080/logout"
 pipenv install
 pipenv run python manage.py makemigrations
 pipenv run python manage.py migrate
-pipenv run python manage.py runserver 8080
 ```
 
 ### Run
